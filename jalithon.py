@@ -92,20 +92,7 @@ async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
         order = await event.reply('**the source is running ⚡️**')
-
-@jalithon.on(events.NewMessage(outgoing=True, pattern=".سورس"))
-async def _(event):
-      await event.reply("""
-╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
-
-
-╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍"""
-)
-
-@jalithon.on(events.NewMessage(outgoing=True, pattern=".مطور"))
-async def _(event):
-      await event.reply("""المطور  : @BIEEC"""
-)
+        
 @jalithon.on(events.NewMessage(outgoing=False, pattern='.الاوامر'))
 async def OwnerStart(event):
     sender = await event.get_sender()
