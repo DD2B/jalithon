@@ -30,14 +30,8 @@ import datetime
 from telethon.tl.functions.messages import GetHistoryRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 import requests
-# - @BIEEC
-
-# - @ii33i3
 
 jalithon.start()
-
-
-
 c = requests.session()
 bot_username = '@zmmbot'
 bot_usernamee = '@A_MAN9300BOT'
