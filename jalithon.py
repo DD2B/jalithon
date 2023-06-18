@@ -125,15 +125,6 @@ async def _(event):
 
 • فحص السورس      - `.فحص`**""")
 
-@jalithon1.on(events.NewMessage(outgoing=True, pattern=r".فحص"))
-async def _(event):
-    start = datetime.datetime.now()
-    await event.edit("**جاري الفحص..**")
-    end = datetime.datetime.now()
-    ms = (end - start).microseconds / 1000
-    await event.edit(f'''
-??? 
-''')
 
 @jalithon1.on(events.NewMessage(outgoing=False, pattern='/point1'))
 async def _(event):
