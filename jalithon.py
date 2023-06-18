@@ -103,12 +103,6 @@ async def OwnerStart(event):
 • INFO ACCOUNT - `/infoacc`
 • JOIN BOT CHANNEL - `/join`**""")
 
-
-@jalithon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
-async def update(event):
-    await event.edit("• جارِ اعادة تشغيل السورس ..\n• انتضر 1-2 دقيقة  .")
-    await sython.disconnect()
-    await sython.send_message("me", "`اكتملت اعادة تشغيل السورس !`")
     
 @jalithon.on(events.NewMessage(outgoing=True, pattern=".اوامر"))
 async def _(event):
@@ -125,15 +119,7 @@ async def _(event):
 
 • فحص السورس      - `.فحص`**""")
 
-@jalithon.on(events.NewMessage(outgoing=True, pattern=r".فحص"))
-async def _(event):
-    start = datetime.datetime.now()
-    await event.edit("**جاري الفحص..**")
-    end = datetime.datetime.now()
-    ms = (end - start).microseconds / 1000
-    await event.edit(f'''
-??? 
-''')
+
 
 @jalithon.on(events.NewMessage(outgoing=False, pattern='/point1'))
 async def _(event):
